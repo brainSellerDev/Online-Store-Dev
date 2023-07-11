@@ -1,7 +1,9 @@
 @import './reset.scss';
-@import './header-block/header.scss';
+@import './variables.scss';
+@import './header-block/header-block.scss';
+@import './main-block/main-block-about/main-block-about.scss';
 
 body {
 	margin: 0 140px;
-    font-family: Montserrat;
+    font-family: $fontFamily;
 }

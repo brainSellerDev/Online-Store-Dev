@@ -1,14 +1,19 @@
 @import '../variables.scss';
-@import '../templateStyles.scss';
 
 .header {
-	@extend %flex-setup;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	.header-logo {
 		padding: 35px 0px 25px 0px;
 	}
 	.header-menu {
 		&__list {
-			@extend %flex-setup;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
 			gap: 27px;
 			.header-menu__list-item {
 			}
@@ -26,14 +31,17 @@
 		}
 	}
 	.header-contacts {
-		@extend %flex-setup;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 		gap: 15px;
 		align-items: center;
 		&__schedule {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
-			
+
 			.header-contacts__schedule-social-numbers {
 				display: flex;
 				column-gap: 15px;
@@ -43,11 +51,17 @@
 
 			.header-contacts__schedule-numbers {
 				font-size: 24px;
-				@extend %text-setup;
+				color: $textColor;
+				font-style: normal;
+				font-weight: 800;
+				line-height: normal;
 			}
 			.header-contacts__schedule-hours {
 				font-size: 12px;
-				@extend %text-setup;
+				color: $textColor;
+				font-style: normal;
+				font-weight: 800;
+				line-height: normal;
 			}
 		}
 		&__call-request-button {
@@ -58,7 +72,10 @@
 			border-radius: 5px;
 			background-color: $frequentlyUsedColor;
 			font-size: 12px;
-			@extend %text-setup;
+			color: $textColor;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
 			color: #fff;
 		}
 	}

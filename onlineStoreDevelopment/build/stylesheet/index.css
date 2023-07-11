@@ -45,24 +45,20 @@ input {
   border-radius: 0;
 }
 
-.header .header-contacts, .header .header-menu__list, .header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
-.header .header-contacts__call-request-button, .header .header-contacts__schedule .header-contacts__schedule-hours, .header .header-contacts__schedule .header-contacts__schedule-numbers {
-  color: #2a2367;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
 .header .header-logo {
   padding: 35px 0px 25px 0px;
 }
 .header .header-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 27px;
 }
 .header .header-menu__list .header-menu__list-item-link {
@@ -77,6 +73,10 @@ input {
   text-decoration: underline;
 }
 .header .header-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 15px;
   align-items: center;
 }
@@ -93,9 +93,17 @@ input {
 }
 .header .header-contacts__schedule .header-contacts__schedule-numbers {
   font-size: 24px;
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 .header .header-contacts__schedule .header-contacts__schedule-hours {
   font-size: 12px;
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 .header .header-contacts__call-request-button {
   cursor: pointer;
@@ -105,7 +113,70 @@ input {
   border-radius: 5px;
   background-color: #6b5af9;
   font-size: 12px;
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
   color: #fff;
+}
+
+.main .product-wrapper .product-about__title {
+  width: 653px;
+  margin: 66px 0 0 0;
+  color: #2a2367;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .product-wrapper .product-about__description {
+  width: 619px;
+  color: #2a2367;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 33px;
+}
+.main .product-wrapper .product-about__description_selected {
+  font-weight: 700;
+}
+.main .product-wrapper .product-about__button {
+  width: 275px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6b5af9;
+  color: #ffffff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+  margin-top: 116px;
+}
+.main .product-wrapper .product-about__request-form-info {
+  margin-top: 20px;
+  width: 472px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.4%;
+}
+.main .product-wrapper .product-about__request-form-info_selected {
+  text-decoration: none;
+}
+.main .product-wrapper .product-about__request-form-info_selected:hover {
+  text-decoration: underline;
+}
+.main .product-wrapper .selected-text {
+  color: #6b5af9;
+}
+.main .product-wrapper .product-image {
+  position: absolute;
+  top: 70px;
+  right: 25px;
 }
 
 body {
