@@ -1,0 +1,88 @@
+@import '../../variables.scss';
+
+.advantages {
+	.advantages-title {
+		padding: 76px 0 54px 0;
+		color: #2a2367;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		&_selected {
+			color: $frequentlyUsedColor;
+		}
+	}
+	.advantages-cards {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 54px 20px;
+		.advantages-card {
+			width: 373px;
+			height: 200px;
+			border-radius: 10px;
+			background: #fff;
+			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+			padding: 2px 0 0 15px;
+			&__number {
+				display: block;
+				color: #fff;
+				font-size: 64px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				text-shadow: 1px 3px 4px gray;
+			}
+			&__title {
+				color: $textColor;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				border-bottom: 2px solid #e37575;
+				display: inline;
+				padding-bottom: 10px;
+			}
+			&__description {
+				color: $textColor;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-top: 18px;
+				margin-right: 38px;
+				text-align: justify;
+			}
+		}
+	}
+	.advantages-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__price{
+            width: 275px;
+            height: 60px;
+            border-radius: 5px;
+            background: $frequentlyUsedColor;
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin: 51px 0 0 0;
+            &:hover {
+            }
+            &:active {
+            }
+            &:focus {
+            }
+        }
+	}
+}
+
+.rectangle-separator{
+    height: 176px;
+    background: #C4C4C4;
+    margin: 42px 0 35px 0;
+}

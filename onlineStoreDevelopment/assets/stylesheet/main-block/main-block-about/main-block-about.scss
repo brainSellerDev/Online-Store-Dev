@@ -64,4 +64,12 @@
 			right: 25px;
 		}
 	}
+    .down-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__ico{
+            margin-top: 66px;
+        }
+    }
 }
