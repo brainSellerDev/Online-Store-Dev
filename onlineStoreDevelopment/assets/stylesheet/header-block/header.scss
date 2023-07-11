@@ -1,0 +1,65 @@
+@import '../variables.scss';
+@import '../templateStyles.scss';
+
+.header {
+	@extend %flex-setup;
+	.header-logo {
+		padding: 35px 0px 25px 0px;
+	}
+	.header-menu {
+		&__list {
+			@extend %flex-setup;
+			gap: 27px;
+			.header-menu__list-item {
+			}
+			.header-menu__list-item-link {
+				text-decoration: none;
+				color: $textColor;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.header-contacts {
+		@extend %flex-setup;
+		gap: 15px;
+		align-items: center;
+		&__schedule {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			
+			.header-contacts__schedule-social-numbers {
+				display: flex;
+				column-gap: 15px;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.header-contacts__schedule-numbers {
+				font-size: 24px;
+				@extend %text-setup;
+			}
+			.header-contacts__schedule-hours {
+				font-size: 12px;
+				@extend %text-setup;
+			}
+		}
+		&__call-request-button {
+			cursor: pointer;
+			border: none;
+			width: 177px;
+			height: 60px;
+			border-radius: 5px;
+			background-color: $frequentlyUsedColor;
+			font-size: 12px;
+			@extend %text-setup;
+			color: #fff;
+		}
+	}
+}

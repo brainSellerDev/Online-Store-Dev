@@ -1,0 +1,116 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.header .header-contacts, .header .header-menu__list, .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-contacts__call-request-button, .header .header-contacts__schedule .header-contacts__schedule-hours, .header .header-contacts__schedule .header-contacts__schedule-numbers {
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.header .header-logo {
+  padding: 35px 0px 25px 0px;
+}
+.header .header-menu__list {
+  gap: 27px;
+}
+.header .header-menu__list .header-menu__list-item-link {
+  text-decoration: none;
+  color: #2a2367;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header .header-menu__list .header-menu__list-item-link:hover {
+  text-decoration: underline;
+}
+.header .header-contacts {
+  gap: 15px;
+  align-items: center;
+}
+.header .header-contacts__schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .header-contacts__schedule .header-contacts__schedule-social-numbers {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-contacts__schedule .header-contacts__schedule-numbers {
+  font-size: 24px;
+}
+.header .header-contacts__schedule .header-contacts__schedule-hours {
+  font-size: 12px;
+}
+.header .header-contacts__call-request-button {
+  cursor: pointer;
+  border: none;
+  width: 177px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #6b5af9;
+  font-size: 12px;
+  color: #fff;
+}
+
+body {
+  margin: 0 140px;
+  font-family: Montserrat;
+}
+
+/*# sourceMappingURL=index.css.map */
