@@ -246,6 +246,7 @@ input {
   align-items: center;
 }
 .advantages .advantages-button__price {
+  cursor: pointer;
   width: 275px;
   height: 60px;
   border-radius: 5px;
@@ -259,10 +260,79 @@ input {
   line-height: normal;
   margin: 51px 0 0 0;
 }
+
 .rectangle-separator {
   height: 176px;
   background: #C4C4C4;
   margin: 42px 0 35px 0;
+}
+
+.product-content .product-crm__info .product-crm__info-title, .product-content .product-integration__info .product-integration__info-title, .product-content .product-ordering__info .product-ordering__info-title, .product-content .product-catalog__info .product-catalog__info-title {
+  color: #6b5af9;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-content .product-crm__info .product-crm__info-list, .product-content .product-integration__info .product-integration__info-list, .product-content .product-ordering__info .product-ordering__info-list, .product-content .product-catalog__info .product-catalog__info-list {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-content .product-crm__info .product-crm__info-list .product-crm__info-list-item, .product-content .product-integration__info .product-integration__info-list .product-integration__info-list-item, .product-content .product-ordering__info .product-ordering__info-list .product-ordering__info-list-item, .product-content .product-catalog__info .product-catalog__info-list .product-catalog__info-list-item {
+  list-style: disc inside;
+  color: #2a2367;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.product-content .product-catalog {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.product-content .product-ordering {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.product-content .product-integration {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.product-content .product-integration__info .product-integration__info-list {
+  align-self: flex-end;
+}
+.product-content .product-crm {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.product-content .product-content__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-content .product-content__button .product-content__button-price {
+  cursor: pointer;
+  width: 275px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: #6b5af9;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 99px 0 150px 0;
 }
 
 body {
