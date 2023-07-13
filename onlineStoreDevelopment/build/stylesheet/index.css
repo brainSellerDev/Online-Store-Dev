@@ -335,6 +335,49 @@ input {
   margin: 99px 0 150px 0;
 }
 
+.awards {
+  width: 1160px;
+  height: 490px;
+  border-radius: 10px;
+  background: #f0d577;
+  padding: 26px 20px;
+}
+.awards .awards-container {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.awards .awards-container .awards-cup {
+  position: relative;
+  top: 20px;
+}
+.awards .awards-container .awards-certificates {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.awards .awards-container .certificate__title {
+  color: #9f9f9f;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+.awards .awards-container .certificate__description {
+  color: #2a2367;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 212px;
+  margin-bottom: 16px;
+}
+
 body {
   margin: 0 140px;
   font-family: Montserrat;
