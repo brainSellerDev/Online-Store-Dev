@@ -1,0 +1,82 @@
+@import '../variables.scss';
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	.header-logo {
+		padding: 35px 0px 25px 0px;
+	}
+	.header-menu {
+		&__list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			gap: 27px;
+			.header-menu__list-item {
+			}
+			.header-menu__list-item-link {
+				text-decoration: none;
+				color: $textColor;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.header-contacts {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 15px;
+		align-items: center;
+		&__schedule {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+
+			.header-contacts__schedule-social-numbers {
+				display: flex;
+				column-gap: 15px;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.header-contacts__schedule-numbers {
+				font-size: 24px;
+				color: $textColor;
+				font-style: normal;
+				font-weight: 800;
+				line-height: normal;
+			}
+			.header-contacts__schedule-hours {
+				font-size: 12px;
+				color: $textColor;
+				font-style: normal;
+				font-weight: 800;
+				line-height: normal;
+			}
+		}
+		&__call-request-button {
+			cursor: pointer;
+			border: none;
+			width: 177px;
+			height: 60px;
+			border-radius: 5px;
+			background-color: $frequentlyUsedColor;
+			font-size: 12px;
+			color: $textColor;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			color: #fff;
+		}
+	}
+}

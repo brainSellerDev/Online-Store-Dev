@@ -1,0 +1,94 @@
+@import '../../variables.scss';
+@import '../main-block-product-content/styles-templates.scss';
+
+.product-content {
+	.product-catalog {
+		display: flex;
+		align-items: center;
+		gap: 70px;
+		&__info {
+			.product-catalog__info-title {
+				@extend %title;
+			}
+			.product-catalog__info-list {
+				@extend %list;
+				.product-catalog__info-list-item {
+					@extend %list-item;
+				}
+			}
+		}
+	}
+
+	.product-ordering {
+		display: flex;
+		align-items: center;
+		gap: 70px;
+		&__info {
+			.product-ordering__info-title {
+				@extend %title;
+			}
+			.product-ordering__info-list {
+				@extend %list;
+				.product-ordering__info-list-item {
+					@extend %list-item;
+				}
+			}
+		}
+	}
+
+	.product-integration {
+		display: flex;
+		align-items: center;
+		gap: 70px;
+		&__info {
+			.product-integration__info-title {
+				@extend %title;
+			}
+			.product-integration__info-list {
+				align-self: flex-end;
+				@extend %list;
+				.product-integration__info-list-item {
+					@extend %list-item;
+				}
+			}
+		}
+	}
+
+	.product-crm {
+		display: flex;
+		align-items: center;
+		gap: 200px;
+		&__info {
+			.product-crm__info-title {
+				@extend %title;
+			}
+			.product-crm__info-list {
+				@extend %list;
+				.product-crm__info-list-item {
+					@extend %list-item;
+				}
+			}
+		}
+	}
+
+	.product-content__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		.product-content__button-price {
+            cursor: pointer;
+			width: 275px;
+			height: 60px;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			background: $frequentlyUsedColor;
+			text-align: center;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+            margin: 99px 0 150px 0 ;
+		}
+	}
+}

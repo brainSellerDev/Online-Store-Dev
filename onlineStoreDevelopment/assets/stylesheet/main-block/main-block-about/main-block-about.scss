@@ -1,0 +1,75 @@
+@import '../../variables.scss';
+
+.main {
+	.product-wrapper {
+		.product-about {
+			&__title {
+				width: 653px;
+				margin: 66px 0 0 0;
+				color: $textColor;
+				font-family: Montserrat;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+			&__description {
+				width: 619px;
+				color: $textColor;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-top: 33px;
+
+				&_selected {
+					font-weight: 700;
+				}
+			}
+			&__button {
+				width: 275px;
+				height: 60px;
+				border-radius: 5px;
+				border: none;
+				background-color: $frequentlyUsedColor;
+				color: #ffffff;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: normal;
+				cursor: pointer;
+				margin-top: 116px;
+			}
+			&__request-form-info {
+				margin-top: 20px;
+				width: 472px;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 137.4%;
+				&_selected {
+					text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+				}
+			}
+		}
+		.selected-text {
+			color: $frequentlyUsedColor;
+		}
+		.product-image {
+			position: absolute;
+			top: 70px;
+			right: 25px;
+		}
+	}
+    .down-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__ico{
+            margin-top: 66px;
+        }
+    }
+}

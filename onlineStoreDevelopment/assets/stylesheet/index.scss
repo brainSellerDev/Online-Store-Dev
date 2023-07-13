@@ -1,0 +1,35 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './header-block/header-block.scss';
+@import './main-block/main-block-about/main-block-about.scss';
+@import './main-block/main-block-advantages/main-block-advantages.scss';
+@import './main-block/main-block-product-content/main-block-product-content.scss';
+@import './main-block/main-block-awards/main-block-awards.scss';
+@import './main-block/main-block-buisiness-analysis/main-block-buisiness-analysis.scss';
+@import './main-block/main-block-workflow/main-block-workflow.scss';
+@import './main-block/main-block-feedback-form/main-block-feedback-form.scss';
+@import './footer-block/footer-block.scss';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 140px;
+    font-family: $fontFamily;
+}
+
+
+  .anchor-top {
+    position: fixed;
+    left: 1330px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:$frequentlyUsedColor ;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+  }

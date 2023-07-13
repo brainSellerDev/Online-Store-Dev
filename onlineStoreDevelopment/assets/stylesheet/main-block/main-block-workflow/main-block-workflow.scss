@@ -1,0 +1,108 @@
+@import '../../variables.scss';
+.workflow {
+	&__title {
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+		color: $textColor;
+		margin-bottom: 57px;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		.workflow-timeline {
+			border-left: 5px solid #bdbdbd;
+			padding-left: 29px;
+			height: 472px;
+			.workflow-info {
+				margin-bottom: 50px;
+				position: relative;
+				top: -30px;
+				&:before {
+					content: '';
+					display: block;
+					width: 23px;
+					height: 23px;
+					border-radius: 50%;
+					background-color: #bdbdbd;
+					position: relative;
+					top: 24px;
+					left: -43px;
+				}
+				&_active {
+					&:before {
+						background-color: $frequentlyUsedColor;
+					}
+				}
+				&__description {
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					color: $textColor;
+					&_active {
+						color: $frequentlyUsedColor;
+					}
+				}
+			}
+		}
+
+		.workflow-stages {
+			position: relative;
+			top: -20px;
+			.stage-card {
+				width: 668px;
+				border-radius: 10px;
+				background: #fff;
+				box-shadow: 0px 10px 60px 0px rgba(42, 35, 103, 0.15);
+				padding: 22px 25px 94px 42px;
+				margin-bottom: 55px;
+				.stage-card-header {
+					display: flex;
+					align-items: center;
+					gap: 50px;
+					border-bottom: 1px solid #ebebeb;
+					padding: 0 0 29px 7px;
+					&__number {
+						color: #fff;
+						border-radius: 50%;
+						background-color: #43cd93;
+						text-align: center;
+						font-size: 24px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+						padding: 12px 22px;
+					}
+					&__title {
+						color: $textColor;
+						font-size: 24px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+					}
+				}
+				&__description {
+					margin-top: 26px;
+					color: $textColor;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+				&__image {
+					margin-top: 30px;
+					img {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.image-separator{
+    max-width: 100%;
+    margin:115px 0 150px -140px;
+}

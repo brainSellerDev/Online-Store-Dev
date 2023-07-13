@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.awards {
+	width: 1160px;
+	height: 490px;
+	border-radius: 10px;
+	background: #f0d577;
+	padding: 26px 20px;
+    margin-bottom: 150px;
+	.awards-container {
+		border-radius: 10px;
+		border: 1px solid #fff;
+		display: flex;
+		align-items: center;
+        gap: 95px;
+		.awards-cup {
+            position: relative;
+            top: 20px;
+		}
+		.awards-certificates {
+			display: flex;
+			align-items: center;
+            gap: 95px;
+		}
+		.certificate {
+			&__title {
+				color: #9f9f9f;
+				text-align: center;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+                margin-bottom: 6px;
+			}
+			&__description {
+				color: $textColor;
+				text-align: center;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+                width: 212px;
+                margin-bottom: 16px;
+			}
+		}
+	}
+}
