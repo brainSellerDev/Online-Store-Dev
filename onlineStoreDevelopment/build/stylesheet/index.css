@@ -742,6 +742,10 @@ table {
   text-decoration: underline;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 140px;
   font-family: Montserrat;

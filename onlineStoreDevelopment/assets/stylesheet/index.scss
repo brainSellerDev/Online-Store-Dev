@@ -10,6 +10,10 @@
 @import './main-block/main-block-feedback-form/main-block-feedback-form.scss';
 @import './footer-block/footer-block.scss';
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
 	margin: 0 140px;
     font-family: $fontFamily;
