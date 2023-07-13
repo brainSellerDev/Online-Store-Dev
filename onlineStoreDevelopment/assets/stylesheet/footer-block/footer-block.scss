@@ -1,0 +1,110 @@
+@import '../variables.scss';
+
+.footer {
+	padding: 75px 140px 58px;
+	background-color: $textColor;
+	.footer-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $frequentlyUsedColor;
+		padding-bottom: 33px;
+		margin-bottom: 44px;
+		.footer-contact-us {
+			&__title {
+				color: #fff;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+			&__mail {
+				color: $frequentlyUsedColor;
+				font-size: 48px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				margin-top: 30px;
+			}
+		}
+		.footer-call-request {
+			align-self: flex-end;
+			&__button {
+				background-color: $frequentlyUsedColor;
+				border-radius: 5px;
+				padding: 22px 108px;
+				color: #fff;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				border: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.footer-main {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		.footer-address-schedule {
+			display: flex;
+			flex-direction: column;
+			row-gap: 24px;
+			&__adress-info,
+			&__shedule-info {
+				color: #fff;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+			&__adress-info {
+				width: 292px;
+			}
+			&__shedule-info {
+				width: 178px;
+			}
+		}
+		.footer-social {
+			display: flex;
+			align-items: center;
+			column-gap: 20px;
+			&__telegram {
+				img {
+					width: 35px;
+					height: 35px;
+				}
+			}
+			&__whatsApp {
+				img {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+		&__logo {
+			img {
+			}
+		}
+		&__info {
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &_linked{
+                text-decoration: underline;
+            }
+		}
+	}
+}
