@@ -341,6 +341,7 @@ input {
   border-radius: 10px;
   background: #f0d577;
   padding: 26px 20px;
+  margin-bottom: 150px;
 }
 .awards .awards-container {
   border-radius: 10px;
@@ -375,6 +376,34 @@ input {
   font-weight: 700;
   line-height: normal;
   width: 212px;
+  margin-bottom: 16px;
+}
+
+.business-analysis {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.business-analysis .business-analysis-about__title {
+  color: #2a2367;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 66px;
+}
+.business-analysis .business-analysis-about__title_selected {
+  color: #6b5af9;
+}
+.business-analysis .business-analysis-about__description {
+  color: #2a2367;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  width: 544px;
+  flex-direction: column;
   margin-bottom: 16px;
 }
 

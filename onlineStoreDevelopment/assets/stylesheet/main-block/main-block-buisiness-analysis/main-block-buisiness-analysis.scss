@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.business-analysis {
+	display: flex;
+	align-items: center;
+    margin-bottom: 120px;
+	.business-analysis-about {
+		&__title {
+			color: $textColor;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			margin-bottom: 66px;
+			&_selected {
+				color: $frequentlyUsedColor;
+			}
+		}
+		&__description {
+			color: $textColor;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			display: flex;
+			width: 544px;
+			flex-direction: column;
+            margin-bottom: 16px;
+		}
+	}
+}
