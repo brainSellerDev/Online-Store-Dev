@@ -407,6 +407,110 @@ input {
   margin-bottom: 16px;
 }
 
+.workflow__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #2a2367;
+  margin-bottom: 57px;
+}
+.workflow__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.workflow__wrapper .workflow-timeline {
+  border-left: 5px solid #bdbdbd;
+  padding-left: 29px;
+  height: 472px;
+}
+.workflow__wrapper .workflow-timeline .workflow-info {
+  margin-bottom: 50px;
+  position: relative;
+  top: -30px;
+}
+.workflow__wrapper .workflow-timeline .workflow-info:before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #bdbdbd;
+  position: relative;
+  top: 24px;
+  left: -43px;
+}
+.workflow__wrapper .workflow-timeline .workflow-info_active:before {
+  background-color: #6b5af9;
+}
+.workflow__wrapper .workflow-timeline .workflow-info__description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #2a2367;
+}
+.workflow__wrapper .workflow-timeline .workflow-info__description_active {
+  color: #6b5af9;
+}
+.workflow__wrapper .workflow-stages {
+  position: relative;
+  top: -20px;
+}
+.workflow__wrapper .workflow-stages .stage-card {
+  width: 668px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgba(42, 35, 103, 0.15);
+  padding: 22px 25px 94px 42px;
+  margin-bottom: 55px;
+}
+.workflow__wrapper .workflow-stages .stage-card .stage-card-header {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0 29px 7px;
+}
+.workflow__wrapper .workflow-stages .stage-card .stage-card-header__number {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #43cd93;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 12px 22px;
+}
+.workflow__wrapper .workflow-stages .stage-card .stage-card-header__title {
+  color: #2a2367;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.workflow__wrapper .workflow-stages .stage-card__description {
+  margin-top: 26px;
+  color: #2a2367;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.workflow__wrapper .workflow-stages .stage-card__image {
+  margin-top: 30px;
+}
+.workflow__wrapper .workflow-stages .stage-card__image img {
+  max-width: 100%;
+}
+
+.image-separator {
+  max-width: 100%;
+  margin: 115px 0 150px -140px;
+}
+
 body {
   margin: 0 140px;
   font-family: Montserrat;
