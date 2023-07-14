@@ -41,6 +41,7 @@ table {
 }
 
 .header {
+  margin: 0 140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -115,6 +116,9 @@ table {
   color: #fff;
 }
 
+.main {
+  margin: 0 140px;
+}
 .main .product-wrapper .product-about__title {
   width: 653px;
   margin: 66px 0 0 0;
@@ -747,7 +751,6 @@ html {
 }
 
 body {
-  margin: 0 140px;
   font-family: Montserrat;
 }
 
