@@ -1,0 +1,69 @@
+@import '../../variables.scss';
+
+.projects-reviews {
+	margin: 56px 140px 334px;
+	.projects {
+		&__title {
+			color: $textColor;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			&_selected {
+				color: $frequentlyUsedColor;
+			}
+		}
+		&__description {
+			color: $textColor;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			padding: 50px 0 25px 80px;
+			&_selected {
+				color: $frequentlyUsedColor;
+			}
+		}
+		.projects-slider {
+			display: flex;
+			align-items: center;
+			margin-bottom: 150px;
+			&__back-button {
+			}
+			&__images {
+				img {
+					width: 993px;
+					height: 426px;
+				}
+			}
+			&__next-button {
+			}
+			img {
+			}
+		}
+	}
+
+	.reviews {
+		&__title {
+			color: $textColor;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			&_selected {
+				color: $frequentlyUsedColor;
+			}
+		}
+		.reviews-cards {
+			margin-top: 70px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			gap: 20px;
+			.review-cards__cards {
+				img {
+				}
+			}
+		}
+	}
+}

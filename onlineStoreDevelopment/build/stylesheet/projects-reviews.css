@@ -1,0 +1,269 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  margin: 0 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-logo {
+  padding: 35px 0px 25px 0px;
+}
+.header .header-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+}
+.header .header-menu__list .header-menu__list-item-link {
+  text-decoration: none;
+  color: #2a2367;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header .header-menu__list .header-menu__list-item-link:hover {
+  text-decoration: underline;
+}
+.header .header-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  align-items: center;
+}
+.header .header-contacts__schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .header-contacts__schedule .header-contacts__schedule-social-numbers {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-contacts__schedule .header-contacts__schedule-numbers {
+  font-size: 24px;
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.header .header-contacts__schedule .header-contacts__schedule-hours {
+  font-size: 12px;
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.header .header-contacts__call-request-button {
+  cursor: pointer;
+  border: none;
+  width: 177px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #6b5af9;
+  font-size: 12px;
+  color: #2a2367;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #fff;
+}
+
+.projects-reviews {
+  margin: 56px 140px 334px;
+}
+.projects-reviews .projects__title {
+  color: #2a2367;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.projects-reviews .projects__title_selected {
+  color: #6b5af9;
+}
+.projects-reviews .projects__description {
+  color: #2a2367;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 50px 0 25px 80px;
+}
+.projects-reviews .projects__description_selected {
+  color: #6b5af9;
+}
+.projects-reviews .projects .projects-slider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.projects-reviews .projects .projects-slider__images img {
+  width: 993px;
+  height: 426px;
+}
+.projects-reviews .reviews__title {
+  color: #2a2367;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.projects-reviews .reviews__title_selected {
+  color: #6b5af9;
+}
+.projects-reviews .reviews .reviews-cards {
+  margin-top: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+}
+.footer {
+  padding: 75px 140px 58px;
+  background-color: #2a2367;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #6b5af9;
+  padding-bottom: 33px;
+  margin-bottom: 44px;
+}
+.footer .footer-top .footer-contact-us__title {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer .footer-top .footer-contact-us__mail {
+  color: #6b5af9;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+}
+.footer .footer-top .footer-call-request {
+  align-self: flex-end;
+}
+.footer .footer-top .footer-call-request__button {
+  background-color: #6b5af9;
+  border-radius: 5px;
+  padding: 22px 108px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+.footer .footer-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.footer .footer-main .footer-address-schedule {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.footer .footer-main .footer-address-schedule__adress-info, .footer .footer-main .footer-address-schedule__shedule-info {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer .footer-main .footer-address-schedule__adress-info {
+  width: 292px;
+}
+.footer .footer-main .footer-address-schedule__shedule-info {
+  width: 178px;
+}
+.footer .footer-main .footer-social {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.footer .footer-main .footer-social__telegram img {
+  width: 35px;
+  height: 35px;
+}
+.footer .footer-main .footer-social__whatsApp img {
+  width: 35px;
+  height: 35px;
+}
+.footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.footer .footer-bottom__info {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer .footer-bottom__info_linked {
+  text-decoration: underline;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+/*# sourceMappingURL=projects-reviews.css.map */

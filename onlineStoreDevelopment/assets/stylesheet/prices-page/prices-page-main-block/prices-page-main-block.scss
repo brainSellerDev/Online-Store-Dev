@@ -1,0 +1,129 @@
+@import '../../variables.scss';
+
+.prices-main {
+    
+	width: 1160px;
+	border-radius: 20px;
+	background: $frequentlyUsedColor;
+	padding: 35px 35px 50px;
+	margin: 58px 140px 220px ;
+	.prices-info {
+		&__description {
+			width: 682px;
+			color: #fff;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			margin-bottom: 85px;
+		}
+		&__image {
+			position: absolute;
+			top: 184px;
+		}
+	}
+
+	.prices-tariff-plans {
+        display: flex;
+        column-gap: 44px;
+		.prices-tariff-plans-card {
+			width: 358px;
+			background: #fff;
+			border-radius: 10px;
+			.prices-tariff-plans-card-top {
+				text-align: center;
+				padding-top: 22px;
+				padding-bottom: 34px;
+				border-bottom: 1px dashed $frequentlyUsedColor;
+				&__title {
+					color: #7c7c7c;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					margin-bottom: 12px;
+				}
+				&__description {
+					color: $textColor;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					margin-bottom: 12px;
+				}
+				&__price {
+					color: #7c7c7c;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					&_selected {
+						color: $textColor;
+						font-size: 24px;
+						font-weight: 700;
+					}
+				}
+			}
+
+			.prices-tariff-plans-card-separators {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				position: relative;
+				top: 163px;
+				&__left {
+					img {
+					}
+				}
+				&__right {
+					img {
+					}
+				}
+			}
+
+			.prices-tariff-plans-card-more-details {
+				padding: 32px 14px 32px 32px;
+				.prices-tariff-plans-card-more-details-list {
+					display: flex;
+					flex-direction: column;
+					row-gap: 12px;
+					list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 2 2' fill='rgb(137,123,255)'><circle r='1.0' /></svg>");
+					&__item {
+						color: $textColor;
+						font-size: 12px;
+						font-weight: 400;
+						padding-left: 14px;
+					}
+				}
+
+				.prices-tariff-plans-card-more-details-order {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					&__button, &__button_premium, &__button_prestige {
+						border: none;
+						cursor: pointer;
+						border-radius: 5px;
+						background: #43cd93;
+						width: 275px;
+						color: #fff;
+						padding: 22px;
+						font-size: 12px;
+						font-style: normal;
+						font-weight: 800;
+						line-height: normal;
+					}
+                    &__button{
+                        margin-top: 260px;
+                    }
+                    &__button_premium{
+                        margin-top: 200px;
+                    }
+                    &__button_prestige{
+                        margin-top: 56px;
+                    }
+				}
+			}
+		}
+	}
+}
