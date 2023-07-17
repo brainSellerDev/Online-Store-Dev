@@ -46,7 +46,7 @@ table {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .header {
     padding: 0 10px 0;
     row-gap: 67px;
@@ -111,7 +111,7 @@ table {
 .header .header-menu__list .header-menu__list-item-link:hover {
   text-decoration: underline;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .header .header-menu {
     display: none;
   }
@@ -172,7 +172,7 @@ table {
   line-height: normal;
   color: #fff;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .header .header-contacts {
     display: none;
   }
@@ -183,7 +183,7 @@ table {
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts {
     margin: 32px 10px 72px;
   }
@@ -207,7 +207,7 @@ table {
 .contacts__title_selected {
   color: #6b5af9;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts__title {
     font-size: 18px;
   }
@@ -228,7 +228,7 @@ table {
   flex-direction: row;
   justify-content: space-between;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts .contacts-details {
     flex-direction: column;
     margin-top: 30px;
@@ -254,7 +254,7 @@ table {
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts .contacts-details .contacts-details-info {
     width: 320px;
     row-gap: 14px;
@@ -282,7 +282,7 @@ table {
 .contacts .contacts-details .contacts-details-info .contacts-details-info-social img {
   display: block;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts .contacts-details .contacts-details-info .contacts-details-info-social img {
     width: 17px;
     height: 17px;
@@ -294,7 +294,7 @@ table {
     height: 23px;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts .contacts-details .contacts-details-info__address {
     width: 200px;
   }
@@ -309,9 +309,9 @@ table {
     width: 300px;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .contacts .contacts-details .contact-details-map iframe {
-    width: 337px;
+    width: 300px;
     height: 262px;
   }
 }
@@ -321,12 +321,18 @@ table {
     height: 408px;
   }
 }
+@media (min-width: 1440px) {
+  .contacts .contacts-details .contact-details-map iframe {
+    width: 767px;
+    height: 420px;
+  }
+}
 
 .footer {
   padding: 75px 140px 58px;
   background-color: #2a2367;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer {
     padding: 27px 10px 48px;
   }
@@ -347,7 +353,7 @@ table {
   align-items: center;
   border-bottom: 1px solid #6b5af9;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-top {
     flex-direction: column;
     align-items: flex-start;
@@ -373,7 +379,7 @@ table {
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-top .footer-contact-us__title {
     font-size: 18px;
   }
@@ -395,7 +401,7 @@ table {
   line-height: normal;
   margin-top: 30px;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-top .footer-contact-us__mail {
     font-size: 20px;
   }
@@ -422,7 +428,7 @@ table {
   border: none;
   cursor: pointer;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-top .footer-call-request__button {
     padding: 22px 78px;
     font-size: 12px;
@@ -439,7 +445,7 @@ table {
   justify-content: space-between;
   padding-top: 44px;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-main {
     flex-direction: column-reverse;
     row-gap: 46px;
@@ -457,7 +463,7 @@ table {
   flex-direction: column;
   row-gap: 24px;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-main .footer-address-schedule {
     row-gap: 26px;
   }
@@ -479,7 +485,7 @@ table {
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-main .footer-address-schedule__adress-info, .footer .footer-main .footer-address-schedule__shedule-info {
     font-size: 14px;
   }
@@ -515,7 +521,7 @@ table {
   align-items: center;
   row-gap: 24px;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .footer .footer-bottom {
     padding: 0 40px;
   }

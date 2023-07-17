@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .contacts {
-	@media (min-width: 360px) {
+	@media (min-width: 320px) {
 		margin: 32px 10px 72px;
 	}
 	@media (min-width: 768px) {
@@ -18,7 +18,7 @@
 		&_selected {
 			color: $frequentlyUsedColor;
 		}
-		@media (min-width: 360px) {
+		@media (min-width: 320px) {
 			font-size: 18px;
 		}
 		@media (min-width: 768px) {
@@ -33,7 +33,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		@media (min-width: 360px) {
+		@media (min-width: 320px) {
 			flex-direction: column;
 			margin-top: 30px;
 		}
@@ -52,7 +52,7 @@
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
-			@media (min-width: 360px) {
+			@media (min-width: 320px) {
 				width: 320px;
 				row-gap: 14px;
 				margin-bottom: 20px;
@@ -76,7 +76,7 @@
 				}
 				img {
 					display: block;
-					@media (min-width: 360px) {
+					@media (min-width: 320px) {
 						width: 17px;
 						height: 17px;
 					}
@@ -89,7 +89,7 @@
 			&__mail {
 			}
 			&__address {
-				@media (min-width: 360px) {
+				@media (min-width: 320px) {
 					width: 200px;
 				}
 				@media (min-width: 768px) {
@@ -102,13 +102,17 @@
 		}
 		.contact-details-map {
 			iframe {
-				@media (min-width: 360px) {
-					width: 337px;
+				@media (min-width: 320px) {
+					width: 300px;
 					height: 262px;
 				}
 				@media (min-width: 768px) {
 					width: 745px;
 					height: 408px;
+				}
+				@media (min-width: 1440px) {
+					width: 767px;
+					height: 420px;
 				}
 			}
 		}
