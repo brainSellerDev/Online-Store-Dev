@@ -2,6 +2,9 @@
 
 .contacts {
 	margin: 56px 140px 300px;
+	@media (min-width: 768px) {
+		margin: 48px 10px 150px;
+	}
 	&__title {
 		color: $textColor;
 		font-size: 36px;
@@ -11,11 +14,18 @@
 		&_selected {
 			color: $frequentlyUsedColor;
 		}
+		@media (min-width: 768px) {
+			font-size: 24px;
+		}
 	}
 	.contacts-details {
 		margin-top: 92px;
-        display: flex;
-        justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+		@media (min-width: 768px) {
+			flex-direction: column;
+			margin-top: 50px;
+		}
 		.contacts-details-info {
 			display: flex;
 			flex-direction: column;
@@ -25,6 +35,9 @@
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
+			@media (min-width: 768px) {
+				margin-bottom: 48px;
+			}
 			.contacts-details-info-social {
 				display: flex;
 				flex-direction: row;
@@ -45,10 +58,16 @@
 			&__mail {
 			}
 			&__address {
-                width: 370px;
+				width: 370px;
 			}
 		}
 		.contact-details-map {
+			iframe{
+				@media (min-width: 768px) {
+					width: 745px;
+					height: 408px;
+				}
+			}
 		}
 	}
 }
