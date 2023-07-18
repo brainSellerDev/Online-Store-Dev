@@ -9,6 +9,10 @@
 		height: 976px;
 		margin: 0 auto 150px;
 	}
+	@media (min-width: 768px) {
+		width: 748px;
+		height: 1015px;
+	}
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
@@ -17,6 +21,10 @@
 		// padding: 40px 98px 32px;
 		@media (min-width: 360px) {
 			gap: 30px;
+		}
+		@media (min-width: 768px) {
+			gap: 60px;
+			flex-direction: column;
 		}
 	}
 	.feedback-info {
@@ -32,6 +40,10 @@
 			@media (min-width: 360px) {
 				font-size: 24px;
 				margin: 40px 0 10px;
+				font-weight: 600;
+			}
+			@media (min-width: 768px) {
+				font-weight: 800;
 			}
 		}
 		&__description {
@@ -45,6 +57,11 @@
 				width: 341px;
 				font-size: 12px;
 				margin-top: 20px;
+			}
+			@media (min-width: 768px) {
+				width: 620px;
+				font-size: 14px;
+				margin-top: 30px;
 			}
 			&_selected {
 				font-weight: bold;
@@ -62,6 +79,11 @@
 			padding: 37px 29px 46px 23px;
 			margin: 0 auto;
 		}
+		@media (min-width: 768px) {
+			width: 472px;
+			padding: 56px 64px 47px;
+			margin: 0 auto;
+		}
 		&__title {
 			color: #fff;
 			text-align: center;
@@ -72,6 +94,9 @@
 			margin-bottom: 28px;
 			@media (min-width: 360px) {
 				font-size: 18px;
+			}
+			@media (min-width: 768px) {
+				font-size: 24px;
 			}
 		}
 		&__description {
@@ -91,7 +116,6 @@
 			color: #ffffff66;
 			margin-bottom: 30px;
 			background-color: $frequentlyUsedColor;
-			font-size: 18px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: normal;
@@ -99,6 +123,9 @@
 			padding-bottom: 8px;
 			@media (max-width: 360px) {
 				font-size: 12px;
+			}
+			@media (max-width: 768px) {
+				font-size: 18px;
 			}
 			&::placeholder {
 				color: #ffffff66;
@@ -157,6 +184,12 @@
 			top: -856px;
 			left: -4px;
 		}
+		@media (min-width: 768px) {
+			width: 146px;
+			height: 146px;
+			top: -910px;
+			left: 62px;
+		}
 	}
 	&__cylinder-img {
 		position: relative;
@@ -169,6 +202,12 @@
 			top: -854px;
 			right: -142px;
 		}
+		@media (min-width: 768px) {
+			width: 174px;
+			height: 173px;
+			right: -464px;
+			top: -450px;
+		}
 	}
 	&__arm-img {
 		position: relative;
@@ -176,6 +215,12 @@
 			width: 221px;
 			height: 113px;
 			top: -110px;
+		}
+		@media (min-width: 768px) {
+			width: 335px;
+			height: 171px;
+			left: -327px;
+			top: 10px;
 		}
 	}
 	&__circle-img {
@@ -186,6 +231,10 @@
 			top: -326px;
 			left: -202px;
 		}
+		@media (min-width: 768px) {
+			left: -604px;
+			top: -166px;
+		}
 	}
 	&__cube-img {
 		position: relative;
@@ -195,6 +244,12 @@
 			height: 91px;
 			top: -274px;
 			right: -260px;
+		}
+		@media (min-width: 768px) {
+			width: 119px;
+			height: 119px;
+			top: -125px;
+			left: 612px;
 		}
 	}
 }
