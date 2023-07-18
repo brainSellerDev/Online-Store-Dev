@@ -1,28 +1,54 @@
 @import '../../variables.scss';
 
 .awards {
-	width: 1160px;
-	height: 490px;
+	// width: 1160px;
+	// height: 490px;
 	border-radius: 10px;
 	background: #f0d577;
 	padding: 26px 20px;
-    margin-bottom: 150px;
+	margin-bottom: 150px;
+	@media (min-width: 360px) {
+		width: 340px;
+		margin: 0 auto 100px;
+	}
 	.awards-container {
 		border-radius: 10px;
 		border: 1px solid #fff;
 		display: flex;
 		align-items: center;
-        gap: 95px;
+		// gap: 95px;
+		flex-wrap: wrap;
+		@media (min-width: 360px) {
+			justify-content: center;
+		}
 		.awards-cup {
-            position: relative;
-            top: 20px;
+			// position: relative;
+			// top: 20px;
+			@media (min-width: 360px) {
+				margin-top: 20px;
+			}
+			img {
+				@media (min-width: 360px) {
+					width: 99px;
+					height: 120px;
+				}
+			}
 		}
 		.awards-certificates {
 			display: flex;
 			align-items: center;
-            gap: 95px;
+			// gap: 95px;
+			flex-wrap: wrap;
+			@media (min-width: 360px) {
+				justify-content: center;
+				margin: 0px 0 20px 0;
+			}
 		}
 		.certificate {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			&__title {
 				color: #9f9f9f;
 				text-align: center;
@@ -30,7 +56,10 @@
 				font-style: normal;
 				font-weight: 700;
 				line-height: normal;
-                margin-bottom: 6px;
+				margin-bottom: 6px;
+				@media (min-width: 360px) {
+					margin-top: 20px;
+				}
 			}
 			&__description {
 				color: $textColor;
@@ -39,8 +68,18 @@
 				font-style: normal;
 				font-weight: 700;
 				line-height: normal;
-                width: 212px;
-                margin-bottom: 16px;
+				width: 212px;
+				margin-bottom: 16px;
+				@media (min-width: 360px) {
+					margin-bottom: 24px;
+				}
+			}
+			&__img {
+				img {
+					@media (min-width: 360px) {
+						width: 280px;
+					}
+				}
 			}
 		}
 	}

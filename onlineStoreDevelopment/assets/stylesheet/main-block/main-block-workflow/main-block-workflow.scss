@@ -1,5 +1,8 @@
 @import '../../variables.scss';
 .workflow {
+	@media (min-width:360px){
+		padding: 0 10px 0;
+	}
 	&__title {
 		font-size: 36px;
 		font-style: normal;
@@ -7,15 +10,22 @@
 		line-height: normal;
 		color: $textColor;
 		margin-bottom: 57px;
+		@media (min-width: 360px) {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
 	}
 	&__wrapper {
-		display: flex;
-		align-items: start;
-		justify-content: space-between;
+		// display: flex;
+		// align-items: start;
+		// justify-content: space-between;
 		.workflow-timeline {
 			border-left: 5px solid #bdbdbd;
 			padding-left: 29px;
 			height: 472px;
+			@media (min-width: 360px) {
+				display: none;
+			}
 			.workflow-info {
 				margin-bottom: 50px;
 				position: relative;
@@ -50,21 +60,28 @@
 		}
 
 		.workflow-stages {
-			position: relative;
-			top: -20px;
+			// position: relative;
+			// top: -20px;
 			.stage-card {
 				width: 668px;
 				border-radius: 10px;
 				background: #fff;
 				box-shadow: 0px 10px 60px 0px rgba(42, 35, 103, 0.15);
-				padding: 22px 25px 94px 42px;
+				// padding: 22px 25px 94px 42px;
 				margin-bottom: 55px;
+				@media (min-width: 360px) {
+					width: 340px;
+					padding: 22px 14px 25px 14px;
+				}
 				.stage-card-header {
 					display: flex;
 					align-items: center;
-					gap: 50px;
+					// gap: 50px;
 					border-bottom: 1px solid #ebebeb;
 					padding: 0 0 29px 7px;
+					@media (min-width: 360px) {
+						gap: 18px;
+					}
 					&__number {
 						color: #fff;
 						border-radius: 50%;
@@ -75,6 +92,10 @@
 						font-weight: 700;
 						line-height: normal;
 						padding: 12px 22px;
+						@media (min-width: 360px) {
+							font-size: 18px;
+							padding: 8px 15px;
+						}
 					}
 					&__title {
 						color: $textColor;
@@ -82,18 +103,29 @@
 						font-style: normal;
 						font-weight: 700;
 						line-height: normal;
+						@media (min-width: 360px) {
+							font-size: 12px;
+						}
 					}
 				}
 				&__description {
-					margin-top: 26px;
+					// margin-top: 26px;
 					color: $textColor;
 					font-size: 18px;
 					font-style: normal;
 					font-weight: 400;
 					line-height: normal;
+					@media (min-width: 360px) {
+						width: 300px;
+						margin-top: 14px;
+						font-size: 12px;
+					}
 				}
 				&__image {
 					margin-top: 30px;
+					@media (min-width:360px){
+						margin-top: 20px;
+					}
 					img {
 						max-width: 100%;
 					}
@@ -102,7 +134,13 @@
 		}
 	}
 }
-.image-separator{
-    max-width: 100%;
-    margin:115px 0 150px -140px;
+.image-separator {
+	max-width: 100%;
+	margin: 115px 0 150px -140px;
+	@media (min-width:360px){
+		display: none;
+	}
+}
+.image-separator-360 {
+	margin: 90px 0;
 }

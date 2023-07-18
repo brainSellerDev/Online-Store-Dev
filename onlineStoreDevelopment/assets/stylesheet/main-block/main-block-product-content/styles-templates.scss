@@ -20,4 +20,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    @media (min-width:360px){
+        font-size: 12px;
+    }
 }

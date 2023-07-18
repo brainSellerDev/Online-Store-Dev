@@ -2,9 +2,16 @@
 
 .business-analysis {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-    margin-bottom: 120px;
+	margin-bottom: 120px;
+	@media (min-width:360px){
+		margin: 0 auto 70px;
+	}
 	.business-analysis-about {
+		@media (max-width:360px){
+			padding: 0 10px 0;
+		}
 		&__title {
 			color: $textColor;
 			font-size: 36px;
@@ -12,6 +19,10 @@
 			font-weight: 800;
 			line-height: normal;
 			margin-bottom: 66px;
+			@media (min-width: 360px) {
+				font-size: 18px;
+				margin-bottom: 30px;
+			}
 			&_selected {
 				color: $frequentlyUsedColor;
 			}
@@ -25,7 +36,21 @@
 			display: flex;
 			width: 544px;
 			flex-direction: column;
-            margin-bottom: 16px;
+			margin-bottom: 16px;
+			@media (min-width: 360px) {
+				width: 340px;
+				font-size: 12px;
+				margin-bottom: 18px;
+			}
+		}
+	}
+
+	.business-analysis-img {
+		img {
+			@media (min-width: 360px) {
+				width: 370px;
+				height: 308px;
+			}
 		}
 	}
 }
