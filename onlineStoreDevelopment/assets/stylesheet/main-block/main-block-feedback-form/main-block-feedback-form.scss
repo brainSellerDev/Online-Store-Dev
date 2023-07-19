@@ -3,7 +3,6 @@
 .feedback {
 	border-radius: 20px;
 	background: #f4f8ff;
-	width: 1160px;
 	@media (min-width: 360px) {
 		width: 340px;
 		height: 976px;
@@ -13,12 +12,14 @@
 		width: 748px;
 		height: 1015px;
 	}
+	@media (min-width: 1200px) {
+		width: 1160px;
+		height: 738px;
+	}
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		// gap: 44px;
-		// padding: 40px 98px 32px;
 		@media (min-width: 360px) {
 			gap: 30px;
 		}
@@ -26,14 +27,22 @@
 			gap: 60px;
 			flex-direction: column;
 		}
+		@media (min-width: 1200px) {
+			flex-direction: row;
+			justify-content: center;
+			gap: 44px;
+			padding: 40px 98px 32px;
+		}
 	}
 	.feedback-info {
 		@media (min-width: 360px) {
 			text-align: center;
 		}
+		@media (min-width: 1200px) {
+			text-align: inherit;
+		}
 		&__title {
 			color: $textColor;
-			font-size: 36px;
 			font-style: normal;
 			font-weight: 800;
 			line-height: 166.4%;
@@ -44,6 +53,11 @@
 			}
 			@media (min-width: 768px) {
 				font-weight: 800;
+			}
+			@media (min-width: 1200px) {
+				font-size: 36px;
+				width: 205px;
+				margin: 0;
 			}
 		}
 		&__description {
@@ -62,6 +76,11 @@
 				width: 620px;
 				font-size: 14px;
 				margin-top: 30px;
+			}
+			@media (min-width: 1200px) {
+				width: 448px;
+				font-size: 18px;
+				margin-top: 20px;
 			}
 			&_selected {
 				font-weight: bold;
@@ -121,10 +140,10 @@
 			line-height: normal;
 			border-bottom: 1px solid #ffffff66;
 			padding-bottom: 8px;
-			@media (max-width: 360px) {
+			@media (min-width: 360px) {
 				font-size: 12px;
 			}
-			@media (max-width: 768px) {
+			@media (min-width: 768px) {
 				font-size: 18px;
 			}
 			&::placeholder {
@@ -149,7 +168,12 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			gap: 10px;
+			@media (min-width: 360px) {
+				gap: 10px;
+			}
+			@media (min-width: 768px) {
+				gap: 0;
+			}
 			&__checkbox {
 				display: block;
 				width: 16px;
@@ -190,6 +214,10 @@
 			top: -910px;
 			left: 62px;
 		}
+		@media (min-width: 1200px) {
+			top: -722px;
+			left: 353px;
+		}
 	}
 	&__cylinder-img {
 		position: relative;
@@ -208,6 +236,10 @@
 			right: -464px;
 			top: -450px;
 		}
+		@media (min-width: 1200px) {
+			right: -870px;
+			top: -418px;
+		}
 	}
 	&__arm-img {
 		position: relative;
@@ -222,6 +254,12 @@
 			left: -327px;
 			top: 10px;
 		}
+		@media (min-width: 1200px) {
+			width: 430px;
+			height: 219px;
+			left: -327px;
+			top: -54px;
+		}
 	}
 	&__circle-img {
 		position: relative;
@@ -234,6 +272,12 @@
 		@media (min-width: 768px) {
 			left: -604px;
 			top: -166px;
+		}
+		@media (min-width: 1200px) {
+			width: 58px;
+			height: 57px;
+			left: -252px;
+			top: -182px;
 		}
 	}
 	&__cube-img {
@@ -250,6 +294,12 @@
 			height: 119px;
 			top: -125px;
 			left: 612px;
+		}
+		@media (min-width: 1200px) {
+			width: 165px;
+			height: 165px;
+			top: 12px;
+			left: 178px;
 		}
 	}
 }

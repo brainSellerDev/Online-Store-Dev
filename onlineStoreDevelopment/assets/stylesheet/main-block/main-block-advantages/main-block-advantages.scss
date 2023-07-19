@@ -2,9 +2,7 @@
 
 .advantages {
 	.advantages-title {
-		// padding: 76px 0 54px 0;
 		color: #2a2367;
-		// font-size: 36px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: normal;
@@ -15,6 +13,10 @@
 		@media (min-width: 768px) {
 			font-size: 24px;
 			margin: 54px 10px 33px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 36px;
+			padding: 76px 0 54px 0;
 		}
 		&_selected {
 			color: $frequentlyUsedColor;
@@ -30,6 +32,9 @@
 		@media (min-width: 768px) {
 			padding: 0 10px;
 			gap: 42px 20px;
+		}
+		@media (min-width: 1200px) {
+			gap: 56px 24px;
 		}
 		.advantages-card {
 			// width: 373px;
@@ -104,5 +109,8 @@
 	margin: 42px 0 35px 0;
 	@media (min-width: 360px) {
 		display: none;
+	}
+	@media (min-width: 1200px) {
+		display: block;
 	}
 }

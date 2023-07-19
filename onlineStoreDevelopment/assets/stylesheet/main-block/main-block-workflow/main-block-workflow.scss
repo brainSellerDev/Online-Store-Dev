@@ -7,12 +7,10 @@
 		padding: 0 14px 0;
 	}
 	&__title {
-		font-size: 36px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: normal;
 		color: $textColor;
-		margin-bottom: 57px;
 		@media (min-width: 360px) {
 			font-size: 18px;
 			margin-bottom: 30px;
@@ -20,17 +18,26 @@
 		@media (min-width: 768px) {
 			font-size: 24px;
 		}
+		@media (min-width: 1200px) {
+			font-size: 36px;
+			margin-bottom: 57px;
+		}
 	}
 	&__wrapper {
-		// display: flex;
-		// align-items: start;
-		// justify-content: space-between;
+		@media (min-width:1200px){
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+		}
 		.workflow-timeline {
 			border-left: 5px solid #bdbdbd;
 			padding-left: 29px;
 			height: 472px;
 			@media (min-width: 360px) {
 				display: none;
+			}
+			@media (min-width: 1200px) {
+				display: block;
 			}
 			.workflow-info {
 				margin-bottom: 50px;
@@ -171,6 +178,9 @@
 	@media (min-width: 360px) {
 		display: none;
 	}
+	@media (min-width: 1200px) {
+		display: block;
+	}
 }
 .image-separator-360 {
 	margin: 90px 0;
@@ -185,5 +195,8 @@
 	}
 	@media (min-width:768px){
 		display: block;
+	}
+	@media (min-width:1200px){
+		display: none;
 	}
 }
