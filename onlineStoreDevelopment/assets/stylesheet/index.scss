@@ -18,17 +18,3 @@ body {
     font-family: $fontFamily;
 }
 
-
-  .anchor-top {
-    position: fixed;
-    left: 1330px;
-    bottom: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color:$frequentlyUsedColor ;
-    img {
-        width: 40px;
-        height: 40px;
-    }
-  }
