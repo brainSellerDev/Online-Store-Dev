@@ -2,12 +2,22 @@
 
 .advantages {
 	.advantages-title {
-		padding: 76px 0 54px 0;
 		color: #2a2367;
-		font-size: 36px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: normal;
+		@media (min-width: 360px) {
+			margin: 57px 10px 30px;
+			font-size: 18px;
+		}
+		@media (min-width: 768px) {
+			font-size: 24px;
+			margin: 54px 10px 33px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 36px;
+			padding: 76px 0 54px 0;
+		}
 		&_selected {
 			color: $frequentlyUsedColor;
 		}
@@ -15,14 +25,31 @@
 	.advantages-cards {
 		display: flex;
 		flex-flow: row wrap;
-		gap: 54px 20px;
+		@media (min-width: 360px) {
+			padding: 0 10px;
+			row-gap: 40px;
+		}
+		@media (min-width: 768px) {
+			padding: 0 10px;
+			gap: 42px 20px;
+		}
+		@media (min-width: 1200px) {
+			gap: 56px 24px;
+		}
 		.advantages-card {
-			width: 373px;
+			// width: 373px;
 			height: 200px;
 			border-radius: 10px;
 			background: #fff;
 			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
 			padding: 2px 0 0 15px;
+			@media (min-width: 360px) {
+				width: 340px;
+			}
+			@media (min-width: 768px) {
+				width: 364px;
+				height: 200px;
+			}
 			&__number {
 				display: block;
 				color: #fff;
@@ -55,29 +82,35 @@
 		}
 	}
 	.advantages-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__price{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__price {
 			cursor: pointer;
-            width: 275px;
-            height: 60px;
-            border-radius: 5px;
-            background: $frequentlyUsedColor;
-            border: none;
-            color: #fff;
-            text-align: center;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-            margin: 51px 0 0 0;
-        }
+			width: 275px;
+			height: 60px;
+			border-radius: 5px;
+			background: $frequentlyUsedColor;
+			border: none;
+			color: #fff;
+			text-align: center;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+			margin: 51px 0 0 0;
+		}
 	}
 }
 
-.rectangle-separator{
-    height: 176px;
-    background: #C4C4C4;
-    margin: 42px 0 35px 0;
+.rectangle-separator {
+	height: 176px;
+	background: #c4c4c4;
+	margin: 42px 0 35px 0;
+	@media (min-width: 360px) {
+		display: none;
+	}
+	@media (min-width: 1200px) {
+		display: block;
+	}
 }

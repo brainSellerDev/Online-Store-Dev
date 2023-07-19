@@ -3,32 +3,68 @@
 .footer {
 	padding: 75px 140px 58px;
 	background-color: $textColor;
+	@media (min-width: 320px) {
+		padding: 27px 10px 48px;
+	}
+	@media (min-width: 768px) {
+		padding: 42px 52px 50px;
+	}
+	@media (min-width: 1200px) {
+		padding: 75px 140px 58px;
+	}
 	.footer-top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid $frequentlyUsedColor;
-		padding-bottom: 33px;
-		margin-bottom: 44px;
+		@media (min-width: 320px) {
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap: 30px;
+			padding-bottom: 12px;
+		}
+		@media (min-width: 768px) {
+			flex-direction: row;
+			padding-bottom: 19px;
+			align-items: flex-end;
+		}
+		@media (min-width: 1200px) {
+			padding-bottom: 33px;
+		}
 		.footer-contact-us {
 			&__title {
 				color: #fff;
-				font-size: 36px;
 				font-style: normal;
 				font-weight: 700;
 				line-height: normal;
+				@media (min-width: 320px) {
+					font-size: 18px;
+				}
+				@media (min-width: 768px) {
+					font-size: 24px;
+				}
+				@media (min-width: 1200px) {
+					font-size: 36px;
+				}
 			}
 			&__mail {
 				color: $frequentlyUsedColor;
-				font-size: 48px;
 				font-style: normal;
 				font-weight: 700;
 				line-height: normal;
 				margin-top: 30px;
+				@media (min-width: 320px) {
+					font-size: 20px;
+				}
+				@media (min-width: 768px) {
+					font-size: 28px;
+				}
+				@media (min-width: 1200px) {
+					font-size: 48px;
+				}
 			}
 		}
 		.footer-call-request {
-			align-self: flex-end;
 			&__button {
 				background-color: $frequentlyUsedColor;
 				border-radius: 5px;
@@ -40,6 +76,14 @@
 				line-height: normal;
 				border: none;
 				cursor: pointer;
+				@media (min-width: 320px) {
+					padding: 22px 78px;
+					font-size: 12px;
+				}
+				@media (min-width: 768px) {
+					padding: 22px 108px;
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -47,11 +91,29 @@
 	.footer-main {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 10px;
+		padding-top: 44px;
+		@media (min-width: 320px) {
+			flex-direction: column-reverse;
+			row-gap: 46px;
+			margin-bottom: 30px;
+		}
+		@media (min-width: 768px) {
+			flex-direction: row;
+			margin-bottom: 0;
+		}
 		.footer-address-schedule {
 			display: flex;
 			flex-direction: column;
 			row-gap: 24px;
+			@media (min-width: 320px) {
+				row-gap: 26px;
+			}
+			@media (min-width: 768px) {
+				row-gap: 34px;
+			}
+			@media (min-width: 1200px) {
+				row-gap: 24px;
+			}
 			&__adress-info,
 			&__shedule-info {
 				color: #fff;
@@ -59,6 +121,12 @@
 				font-style: normal;
 				font-weight: 700;
 				line-height: normal;
+				@media (min-width: 320px) {
+					font-size: 14px;
+				}
+				@media (min-width: 1200px) {
+					font-size: 18px;
+				}
 			}
 			&__adress-info {
 				width: 292px;
@@ -87,24 +155,32 @@
 	}
 
 	.footer-bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 24px;
+		@media (min-width: 320px) {
+			padding: 0 40px;
+		}
+		@media (min-width: 768px) {
+			row-gap: 30px;
+			padding: 0;
+		}
 		&__logo {
 			img {
 			}
 		}
 		&__info {
-            color: #FFF;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            &_linked{
-                text-decoration: underline;
-            }
+			color: #fff;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-align: center;
+			&_linked {
+				text-decoration: underline;
+			}
 		}
 	}
 }

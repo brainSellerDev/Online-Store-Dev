@@ -1,35 +1,102 @@
 @import '../../variables.scss';
 
 .prices-main {
-    
-	width: 1160px;
 	border-radius: 20px;
 	background: $frequentlyUsedColor;
-	padding: 35px 35px 50px;
-	margin: 58px 140px 220px ;
+	// margin: 58px 140px 220px;
+
+	@media (min-width: 360px) {
+		padding: 31px 0px 94px;
+		width: 340px;
+		margin: 35px 10px 150px;
+	}
+	@media (min-width: 768px) {
+		padding: 14px 0px 74px;
+		width: 748px;
+		margin: 35px 10px 265px;
+	}
+	@media (min-width: 1200px) {
+		padding: 38px 0px 50px;
+		width: 1160px;
+		margin: 60px 140px 300px;
+	}
 	.prices-info {
 		&__description {
 			width: 682px;
 			color: #fff;
-			font-size: 18px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: normal;
-			margin-bottom: 85px;
+
+			@media (min-width: 360px) {
+				font-size: 12px;
+				width: 311px;
+				margin-bottom: 0;
+				padding: 0 17px 0 12px;
+			}
+			@media (min-width: 768px) {
+				font-size: 14px;
+				width: 682px;
+				padding: 0 37px 0 29px;
+			}
+			@media (min-width: 1200px) {
+				font-size: 18px;
+				width: 682px;
+				padding: 0 0px 0 29px;
+			}
 		}
 		&__image {
 			position: absolute;
 			top: 184px;
+			@media (min-width: 360px) {
+				display: none;
+			}
+			@media (min-width: 1200px) {
+				padding: 0 21px;
+				display: block;
+			}
+		}
+		&__image-360 {
+			@media (min-width: 768px) {
+				display: none;
+			}
+		}
+		&__image-768 {
+			@media (min-width: 360px) {
+				display: none;
+			}
+			@media (min-width: 768px) {
+				display: block;
+				padding: 0 10px;
+				margin-bottom: 25px;
+			}
+			@media (min-width: 1200px) {
+				display: none;
+			}
 		}
 	}
 
 	.prices-tariff-plans {
-        display: flex;
-        column-gap: 44px;
+		display: flex;
+		@media (min-width: 360px) {
+			flex-direction: column;
+			align-items: center;
+			row-gap: 30px;
+		}
+		@media (min-width: 1200px) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			column-gap: 44px;
+			margin-top: 85px;
+		}
 		.prices-tariff-plans-card {
 			width: 358px;
 			background: #fff;
 			border-radius: 10px;
+			@media (min-width: 360px) {
+				width: 334px;
+			}
 			.prices-tariff-plans-card-top {
 				text-align: center;
 				padding-top: 22px;
@@ -100,7 +167,9 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					&__button, &__button_premium, &__button_prestige {
+					&__button,
+					&__button_premium,
+					&__button_prestige {
 						border: none;
 						cursor: pointer;
 						border-radius: 5px;
@@ -113,15 +182,15 @@
 						font-weight: 800;
 						line-height: normal;
 					}
-                    &__button{
-                        margin-top: 260px;
-                    }
-                    &__button_premium{
-                        margin-top: 200px;
-                    }
-                    &__button_prestige{
-                        margin-top: 56px;
-                    }
+					&__button {
+						margin-top: 260px;
+					}
+					&__button_premium {
+						margin-top: 200px;
+					}
+					&__button_prestige {
+						margin-top: 56px;
+					}
 				}
 			}
 		}

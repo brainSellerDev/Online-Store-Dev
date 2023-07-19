@@ -2,10 +2,32 @@
 @import '../main-block-product-content/styles-templates.scss';
 
 .product-content {
+	@media (max-width: 360px) {
+		padding: 0 10px;
+	}
 	.product-catalog {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 70px;
+		@media (min-width: 768px) {
+			flex-wrap: nowrap;
+		}
+		@media (min-width: 1200px) {
+			column-gap: 0px;
+		}
+		&__image {
+			img {
+				@media (min-width: 360px) {
+					width: 368px;
+					height: 251px;
+				}
+				@media (min-width: 1200px) {
+					width: 521px;
+					height: 355px;
+				}
+			}
+		}
 		&__info {
 			.product-catalog__info-title {
 				@extend %title;
@@ -22,7 +44,29 @@
 	.product-ordering {
 		display: flex;
 		align-items: center;
-		gap: 70px;
+		@media (min-width: 360px) {
+			flex-wrap: wrap-reverse;
+			margin-top: 32px;
+			gap: 24px;
+		}
+		@media (min-width: 768px) {
+			flex-wrap: nowrap;
+			margin-top: 0;
+			gap: 0;
+			padding: 0 0 0 10px;
+		}
+		&__image {
+			img {
+				@media (min-width: 360px) {
+					width: 368px;
+					height: 251px;
+				}
+				@media (min-width: 1200px) {
+					width: 525px;
+					height: 357px;
+				}
+			}
+		}
 		&__info {
 			.product-ordering__info-title {
 				@extend %title;
@@ -39,7 +83,27 @@
 	.product-integration {
 		display: flex;
 		align-items: center;
-		gap: 70px;
+		flex-wrap: wrap;
+		@media (min-width: 360px) {
+			margin-top: 32px;
+			gap: 24px;
+		}
+		@media (min-width: 1200px) {
+			margin-top: 32px;
+			gap: 0;
+		}
+		&__image {
+			img {
+				@media (min-width: 360px) {
+					width: 368px;
+					height: 251px;
+				}
+				@media (min-width: 1200px) {
+					width: 530px;
+					height: 366px;
+				}
+			}
+		}
 		&__info {
 			.product-integration__info-title {
 				@extend %title;
@@ -57,7 +121,29 @@
 	.product-crm {
 		display: flex;
 		align-items: center;
-		gap: 200px;
+		@media (min-width: 360px) {
+			flex-wrap: wrap-reverse;
+			margin-top: 32px;
+			gap: 62px;
+		}
+		@media (min-width: 768px) {
+			flex-wrap: nowrap;
+			margin-top: 0;
+			gap: 0;
+			padding: 0 0 0 10px;
+		}
+		&__image {
+			img {
+				@media (min-width: 360px) {
+					width: 368px;
+					height: 251px;
+				}
+				@media (min-width: 1200px) {
+					width: 539px;
+					height: 367px;
+				}
+			}
+		}
 		&__info {
 			.product-crm__info-title {
 				@extend %title;
@@ -72,11 +158,11 @@
 	}
 
 	.product-content__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		.product-content__button-price {
-            cursor: pointer;
+			cursor: pointer;
 			width: 275px;
 			height: 60px;
 			border: none;
@@ -88,7 +174,10 @@
 			font-style: normal;
 			font-weight: 800;
 			line-height: normal;
-            margin: 99px 0 150px 0 ;
+			margin: 50px 0 100px 0;
+			@media (min-width:1200px){
+				margin: 100px 0 150px;
+			}
 		}
 	}
 }

@@ -1,25 +1,62 @@
 @import '../../variables.scss';
 
 .projects-reviews {
-	margin: 56px 140px 334px;
+	@media (min-width: 360px) {
+		padding: 32px 10px 150px 10px;
+	}
+	@media (min-width: 768px) {
+		padding: 32px 10px 250px 10px;
+	}
+	@media (min-width: 1200px) {
+		padding: 56px 140px 334px;
+	}
+
 	.projects {
 		&__title {
 			color: $textColor;
-			font-size: 36px;
 			font-style: normal;
 			font-weight: 800;
 			line-height: normal;
+			@media (min-width: 360px) {
+				font-size: 18px;
+			}
+			@media (min-width: 768px) {
+				font-size: 24px;
+			}
+			@media (min-width: 1200px) {
+				font-size: 36px;
+			}
+			img {
+				@media (min-width: 360px) {
+					width: 19px;
+					height: 19px;
+				}
+				@media (min-width: 768px) {
+					width: 29px;
+					height: 29px;
+				}
+			}
 			&_selected {
 				color: $frequentlyUsedColor;
 			}
 		}
 		&__description {
 			color: $textColor;
-			font-size: 18px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: normal;
-			padding: 50px 0 25px 80px;
+			@media (min-width: 360px) {
+				margin: 32px 0 0 0;
+				font-size: 12px;
+			}
+			@media (min-width: 768px) {
+				margin: 38px 0 20px 70px;
+				font-size: 12px;
+			}
+			@media (min-width: 1200px) {
+				margin: 50px 0 25px 110px;
+				font-size: 18px;
+			}
 			&_selected {
 				color: $frequentlyUsedColor;
 			}
@@ -27,13 +64,63 @@
 		.projects-slider {
 			display: flex;
 			align-items: center;
-			margin-bottom: 150px;
+			@media (min-width: 360px) {
+				margin-bottom: 100px;
+			}
+			&__next-button,
+			&__back-button {
+				@media (min-width: 360px) {
+					z-index: 1;
+					position: relative;
+					top: -26px;
+					left: -14px;
+				}
+				@media (min-width: 768px) {
+					position: inherit;
+				}
+				img {
+					@media (min-width: 360px) {
+						width: 50px;
+						height: 50px;
+					}
+					@media (min-width: 768px) {
+						width: 60px;
+						height: 60px;
+					}
+					@media (min-width: 1200px) {
+						width: 85px;
+						height: 85px;
+					}
+				}
+			}
 			&__back-button {
 			}
 			&__images {
 				img {
-					width: 993px;
-					height: 426px;
+					@media (min-width: 768px) {
+						width: 624px;
+						height: 326px;
+					}
+					@media (min-width: 1200px) {
+						width: 993px;
+						height: 426px;
+					}
+				}
+				@media (min-width: 360px) {
+					display: none;
+				}
+				@media (min-width: 768px) {
+					display: block;
+				}
+			}
+			&__images-360 {
+				@media (min-width: 360px) {
+					width: 272px;
+					position: relative;
+					left: -58px;
+				}
+				@media (min-width: 768px) {
+					display: none;
 				}
 			}
 			&__next-button {
@@ -42,7 +129,6 @@
 			}
 		}
 	}
-
 	.reviews {
 		&__title {
 			color: $textColor;
@@ -50,18 +136,47 @@
 			font-style: normal;
 			font-weight: 800;
 			line-height: normal;
+			@media (min-width: 360px) {
+				font-size: 18px;
+			}
+			@media (min-width: 768px) {
+				font-size: 24px;
+			}
+			@media (min-width: 1200px) {
+				font-size: 36px;
+			}
 			&_selected {
 				color: $frequentlyUsedColor;
 			}
 		}
 		.reviews-cards {
-			margin-top: 70px;
 			display: flex;
 			flex-flow: row wrap;
-			align-items: center;
-			gap: 20px;
+			@media (min-width: 360px) {
+				flex-direction: column;
+				margin-top: 20px;
+				gap: 20px;
+			}
+			@media (min-width: 768px) {
+				flex-flow: row wrap;
+				margin-top: 30px;
+				gap: 13px;
+			}
+			@media (min-width: 768px) {
+				margin-top: 70px;
+				gap: 20px;
+			}
 			.review-cards__cards {
 				img {
+					@media (min-width: 360px) {
+						width: 340px;
+					}
+					@media (min-width: 768px) {
+						width: 235px;
+					}
+					@media (min-width: 1200px) {
+						width: 373px;
+					}
 				}
 			}
 		}

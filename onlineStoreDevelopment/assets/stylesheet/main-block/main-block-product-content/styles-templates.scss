@@ -20,4 +20,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    @media (min-width:360px){
+        font-size: 12px;
+    }
+    @media (min-width:768px){
+        width: 336px;
+    }
+    @media (min-width:1200px){
+        font-size: 14px;
+        width: 630px;
+    }
 }
